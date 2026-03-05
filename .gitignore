@@ -1,0 +1,12 @@
+music/
+output/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.claude/
+*.egg-info/
+dist/
+build/
+.eggs/
+*.un~

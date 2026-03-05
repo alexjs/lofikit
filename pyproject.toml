@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lofikit"
+version = "0.1.0"
+description = "Convert footage into polished lofi YouTube videos"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1",
+    "Pillow>=10.0",
+]
+
+[project.scripts]
+lofikit = "lofikit.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["lofikit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
